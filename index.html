@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转到通用设置</title>
+</head>
+<body>
+    <button id="settingsButton" style="font-size: 18px; padding: 10px 20px;">打开通用设置</button>
+
+    <script>
+        document.getElementById("settingsButton").addEventListener("click", function () {
+            // 尝试跳转到 iOS 的通用设置页面
+            window.location.href = "App-Prefs:root=General";
+        });
+    </script>
+</body>
+</html>
